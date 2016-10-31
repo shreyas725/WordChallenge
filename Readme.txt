@@ -1,12 +1,28 @@
 ********************************************** README FILE*****************************************
 
+                                              The challenge
+                                              
+A file called “wordsforproblem.txt” which contains a sorted list of approximately 173,000 words. The words are listed one word per line, do not contain spaces, and are all lowercase.
+The task is to write a program that reads the file and provides the following:
+❖ the longest concatenated word (that is, the longest word that is comprised entirely of
+shorter words in the file)
+❖ the 2nd longest concatenated word
+❖ the total count of all the concatenated words in the file
+For example, if the file contained: cat
+cats catsdogcats
+dog
+dogcatsdog hippopotamuses rat
+ratcatdogcat
+the longest concatenated word would be 'ratcatdogcat' with 12 characters. ‘hippopotamuses’ is a longer word, however it is not comprised entirely of shorter words in the list. The 2nd longest concatenated word is ‘catsdogcats’ with 11 characters. The total number of concatenated words is 3. Note that ‘cats’ is not a concatenated word because there is no word ‘s’ in the list.
+
+
+********************************************************************************************************
+
+The solution was found with a maximum optimized run time of 2.01 seconds by making use of prefix trees (trie data structure) as follows:
+
+ i) The longest and 2nd longest concatenated words are "ethylenediaminetetraacetates" and "electroencephalographically".
+ ii) The total count of concatenated words in the file = 97107.
+
 The solution program can be run and tested by typing from the command line - python WordChallengeOptimized.py 
 
 
-****************************************************************************************************
-
-The answers to the questions asked in the coding assignment -
-
-i) The longest and 2nd longest concatenated words are "ethylenediaminetetraacetates" and "electroencephalographically".
-
-ii) The total count of concatenated words in the file = 97107.
